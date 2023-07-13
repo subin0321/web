@@ -1,0 +1,356 @@
+body{
+    background-color: #f7f1ed;
+    overflow-x: hidden;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+.header {
+    margin-top :30px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    margin-left: 50px;
+    margin-bottom: -15px;
+    width: 100%;
+    height: 60px;
+}
+
+
+#top_menu a {
+    font-family: '하남다움체';
+    margin-right: 20px;
+    text-decoration: none;
+    color: #c866d5;
+    font-weight: bold;
+    transition: font-size 0.3s, text-decoration 0.3s;
+}
+
+#top_menu a:hover {
+    color : #212a62dc;
+}
+
+
+
+.main_board{
+    background-color: #f2f2f2;
+    padding: 360px;
+    display: flex;
+    overflow: hidden;
+   
+}
+
+.main_b{
+    z-index: 2;
+}
+
+.button {
+    position: absolute;
+    right: 400px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.65s;
+    overflow: hidden;
+  }
+
+  .button img{
+    width: 200px;
+    height: auto ;
+  }
+
+  .button1{
+    top: 30%;
+    transform: rotate(-30deg);
+  }
+
+  .button2{
+    top: 55%;
+    right:350px;
+    transform: rotate(0deg);
+  }
+
+  .button3{
+    top: 80%;
+    transform: rotate(30deg);
+  }
+
+  .button:active{
+
+    color: #b7b7b7;
+  }
+  
+.person {
+    margin-top: -300px;
+    position: relative;
+    background-size: contain;
+    z-index: 1;
+}
+
+#personImage{
+   margin-left:-400px;
+    width: 700px;
+    height: 100%;
+    z-index: 2;
+    
+}
+#eye{
+   width:215px ;
+   position:absolute;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-122%);
+    z-index: 4;
+}
+
+.eye {
+ 
+    margin-left: -75px;
+margin-top: 220px;
+position: absolute;
+z-index: 3;
+/*top: 50%;
+transform: translateY(-50%);
+transition: all 0.2s ease-in-out;*/
+}
+.eye img{
+    width: 175px;
+
+}
+
+#lEye {
+left: 40%;
+}
+
+#rEye {
+right: 40%;
+}
+
+
+
+
+.main{
+    margin-top: -360px;
+    background-color: #d277cc;
+    height: 900px;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main h1{
+    font-family: 'HS봄바람체 2.0';
+    color:#212a62dc
+
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    float: left;
+}
+
+.intr{
+    margin-top: 50px;
+    margin-left:250px;
+}
+
+.main_text{
+    color:#2f365f;
+    background-color: #f2f2f2;
+    font-family: "하남다움체";
+    font-size: large;
+    line-height: 40px;
+    margin-left: 100px;
+    padding:6px 20px 5px 20px;
+    border-radius: 30px;
+    float: left;
+}
+
+.stack {
+    background-color: #faebe6;
+    margin : 100px 0 80px 250px;
+    padding: 10px 50px;
+    padding-bottom: 40px;
+    width: 650px;
+    right: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.icon{
+    width: 700px ;
+    height: 100px;
+    margin : 0 auto;
+}
+.icon img{
+   width: 90px;
+    height: 100%;
+    margin-left:27px;
+}
+
+.icon img:hover{
+    animation: rotate_image 0.4s linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotateY(360deg);
+    }
+}
+
+
+
+.video{
+    display:block;
+   z-index:2;
+    margin : 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.video-container{
+    display: flex;
+      justify-content: space-between;
+}
+
+.video + .video {
+    margin-left: -300px;
+  }
+
+.video::-webkit-media-controls-panel {
+    display: none !important; /* 웹킷 기반 브라우저 (예: Chrome, Safari)에서 컨트롤 패널 숨기기 */
+  }
+  
+  .video::-webkit-media-controls {
+    display:none !important; /* 웹킷 기반 브라우저 (예: Chrome, Safari)에서 컨트롤 바 숨기기 */
+  }
+  
+  .video::-webkit-media-controls-volume-slider {
+    display:none !important; /* 웹킷 기반 브라우저 (예: Chrome, Safari)에서 음량 슬라이더 숨기기 */
+  }
+
+
+
+
+.board{
+   
+    padding: 10px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.board h1{
+    font-family: 'HS봄바람체 2.0';
+    color:#212a62dc;
+    margin-left : 300px;
+}
+
+.box{
+    height: 500px ;
+    width: 1000px;
+    padding: 10px;
+    display: flex;
+    margin: 150px 300px 20px 20px;
+}
+
+.box a{
+    text-decoration: none;
+    color:#333
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 25px;
+}
+
+.container {
+position: relative;
+width: 200px;
+height: 200px;
+margin-left: 50px;
+overflow: hidden;
+border-radius: 10%;
+text-align: center;
+border: 0px solid #ccc;
+transition: all 0.3s;
+}
+
+.container a{
+    
+    font-family: "하남다움체";
+    color: #212a62dc;
+}
+.container:hover {
+transform: scale(1.2);
+}
+
+.thumbnail img {
+width: 160px;
+height: auto;
+}
+
+.caption {
+    margin-top: 5px;;
+    border-radius: 20px;
+    background-color:#d277cc;
+    padding: 10px;
+}
+
+.caption-text {
+    line-height: 10px;;
+color: rgb(255, 255, 255);
+font-size: 14px;
+}
+
+/* 클래스명 수정 */
+.box1 {
+/* 스타일 추가 */
+}
+
+.box2 {
+/* 스타일 추가 */
+}
+
+.under{
+    background-color: #2f365f;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.under p{
+    color:#7c5379;
+}
+
+#title_l{
+    margin-left: 200px;
+    font-size: 25px;
+    font-family: "하남다움체";
+}
+
+#title_r{
+    margin-right: 80px;
+
+}
+
+#icon{
+    text-align: center;
+}
